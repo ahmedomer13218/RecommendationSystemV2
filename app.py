@@ -25,9 +25,6 @@ def load_models():
     with open('item_item-collaberative_filtering/usermovie2rating_test.pkl', 'rb') as f:
         loaded_usermovie2rating_test_m1 = pickle.load(f)
 
-    with open('item_item-collaberative_filtering/neighbors.pkl', 'rb') as f:
-        loaded_neighbors_m1 = pickle.load(f)
-
     with open('item_item-collaberative_filtering/averages.pkl', 'rb') as f:
         loaded_averages_m1 = pickle.load(f)
 
@@ -48,6 +45,9 @@ def load_models():
 
     with open('user_user_collaberative_filtring/deviations.pkl', 'rb') as f:
         loaded_deviations_m2 = pickle.load(f)
+        
+    with open('item_item-collaberative_filtering/neighbors.pkl', 'rb') as f:
+        loaded_neighbors_m1 = pickle.load(f)
 
     with open('matrix_factorization/mu.pkl', 'rb') as f: #    mu 10 , df 11 , 3 12 , 4 13, 5 14
         mu = pickle.load(f)
