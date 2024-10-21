@@ -4,6 +4,5 @@ numpy
 pandas
 scipy
 scikit-learn
-pickle5
 h5py
 keras
